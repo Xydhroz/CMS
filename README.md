@@ -23,7 +23,10 @@ Ce projet consiste en la création d'un CMS simple.
 **Il devra permettre :**
 
 - De mettre en ligne du contenu, via une interface d'administration **protégée par un mot de passe**
-- Une différentation entre le type de contenu mis en ligne : **nouvelle page** / **article dans une page existante** / **gallerie de photos**
+- Une différentation entre le type de contenu mis en ligne : 
+     - **nouvelle page**
+     - **article dans une page existante**
+     - **galerie de photos**
 - De gérer les liens disponibles dans le menu du site
 - De modifier, pour chaque page, la disposition du contenu (parmis trois disposition par défaut)
 - De disposer de trois niveaux de droits différents :
