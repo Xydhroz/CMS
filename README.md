@@ -26,7 +26,10 @@ Ce projet consiste en la création d'un CMS simple.
 - Une différentation entre le type de contenu mis en ligne : **nouvelle page** / **article dans une page existante** / **gallerie de photos**
 - De gérer les liens disponibles dans le menu du site
 - De modifier, pour chaque page, la disposition du contenu (parmis trois disposition par défaut)
-- De disposer de trois niveaux de droits différents : **Niveau 1 : rédaction de contenu | Niveau 2 : publication de contenu | Niveau 3 : Administration complète du site**
+- De disposer de trois niveaux de droits différents :
+    - **Niveau 1** : Rédaction de contenu
+    - **Niveau 2** : Rédaction et publication de contenu
+    - **Niveau 3** : Administration complète du site
 - De changer le jeu de couleur des éléments principaux
 
 **De plus**
