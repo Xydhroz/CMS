@@ -6,12 +6,21 @@
         <title>CMS (name comming soon)</title>
 
         <link type="text/css" rel="stylesheet" href="<?=$hostName?>assets/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="<?=$hostName?>assets/css/style.min.css"  media="screen,projection"/>
 
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     </head>
     <body>
-    <p>Header</p>
+    <nav>
+        <div class="nav-wrapper light-blue darken-3">
+            <a href="<?=$hostName?>" class="brand-logo">Your Logo Here</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="<?=$hostName?>accueil/">Accueil</a></li>
+                <li><a href="<?=$hostName?>accueil/test">Page Test</a></li>
+            </ul>
+        </div>
+    </nav>
+
 
     <div id="main">
-
 
