@@ -17,6 +17,7 @@
         $_GET['page'] = 'index';
     }
 
+
     require $host.'settings/database-connect.php';
     require $host.'templates/header.php';
 
