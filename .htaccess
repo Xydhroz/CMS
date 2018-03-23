@@ -2,5 +2,6 @@ SetEnv HTACCESS on
 Options +FollowSymLinks
 RewriteEngine On
 
-RewriteRule ^([^/]+)/?$  index.php?view=$1 [QSA,L]
+
+RewriteRule ^([^/]+)?$  index.php?view=$1 [QSA,L]
 RewriteRule ^([^/]+)/([^/]+)/?$  index.php?view=$1&page=$2 [QSA,L]

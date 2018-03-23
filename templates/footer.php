@@ -1,5 +1,7 @@
 
-    </div>
+    </main>
+
+
     <footer class="page-footer">
         <div class="container">
             <div class="row">
@@ -28,6 +30,5 @@
 
     <script type="text/javascript" src="<?=$hostName?>assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="<?=$hostName?>assets/js/materialize.min.js"></script>
-
     </body>
 </html>

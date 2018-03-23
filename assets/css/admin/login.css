@@ -1,0 +1,15 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #logo img {
+    max-width: 100px;
+    margin-right: 20px; }
+
+/*# sourceMappingURL=login.css.map */

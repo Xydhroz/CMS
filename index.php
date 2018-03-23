@@ -10,18 +10,27 @@
         $hostName   = 'http://'.$_SERVER['SERVER_NAME'].'/';
     }
 
-    if(!isset($_GET['view'])){
+
+
+    if(!isset($_GET['view']) || $_GET['view'] == ''){
         $_GET['view'] = 'accueil';
     }
-    if(!isset($_GET['page'])){
+    if(!isset($_GET['page']) || $_GET['page'] == ''){
         $_GET['page'] = 'index';
     }
 
+    if($_GET['view'] == 'admin'){
+        $_GET['page'] = 'login';
+    }
 
     require $host.'settings/database-connect.php';
     require $host.'templates/header.php';
 
-    if(!include $host.'view/'.$_GET['view'].'/'.$_GET['page'].'.php'){
+    $requiredPage = $host.'view/'.$_GET['view'].'/'.$_GET['page'].'.php';
+
+    //echo $requiredPage;
+
+    if(!include $requiredPage){
        include $host.'templates/404.php';
     }
 
