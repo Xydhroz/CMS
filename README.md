@@ -1,4 +1,4 @@
-# Projet CMS
+# Rigel CMS
 
 ### Team :
 
@@ -23,7 +23,7 @@ Ce projet consiste en la création d'un CMS simple.
 **Il devra permettre :**
 
 - De mettre en ligne du contenu, via une interface d'administration **protégée par un mot de passe**
-- Une différentation entre le type de contenu mis en ligne : 
+- Une différentation entre le type de contenu mis en ligne :
      - **nouvelle page**
      - **article dans une page existante**
      - **galerie de photos**
@@ -38,4 +38,3 @@ Ce projet consiste en la création d'un CMS simple.
 **De plus**
 
 - Ce CMS metttra en place une architecture MVC
-
