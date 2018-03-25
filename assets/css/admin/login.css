@@ -12,4 +12,16 @@ main {
     max-width: 100px;
     margin-right: 20px; }
 
+#toast-container {
+  top: 10% !important;
+  right: 0 !important;
+  left: auto !important;
+  bottom: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important; }
+
 /*# sourceMappingURL=login.css.map */

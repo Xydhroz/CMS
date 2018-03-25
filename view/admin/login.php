@@ -23,26 +23,56 @@
             <div class='row'>
                 <div class='input-field col s12'>
                     <input class='validate' type='email' name='email' id='email' />
-                    <label for='email'>Enter your email</label>
+                    <label for='email'>Email</label>
                 </div>
             </div>
 
             <div class='row'>
                 <div class='input-field col s12'>
                     <input class='validate' type='password' name='password' id='password' />
-                    <label for='password'>Enter your password</label>
+                    <label for='password'>Mot de passe</label>
                 </div>
                 <label style='float: right;'>
-                    <a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+                    <a class='pink-text' href='#!'><b>Mot de passe oublié ?</b></a>
                 </label>
             </div>
 
             <br />
             <center>
                 <div class='row'>
-                    <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                    <button type='submit' id="login_submit" name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Connexion</button>
                 </div>
             </center>
         </form>
     </div>
 </div>
+
+<?php
+
+$script .="<script>
+
+       $('#login_submit').click(function(e){
+           Materialize.Toast.removeAll();
+           e.preventDefault();
+           email    = $('#email').val();
+           password = $('#password').val();
+           
+           $.ajax({
+                type : 'POST',
+                url  : '".$hostName."controller/admin/login.php',
+                data : 'email='+email+'&password='+password,
+                success : function(data){
+                    if(data == 'error'){
+                          Materialize.toast('Identifiants Incorrects', 999999999999, 'red') // 4000 is the duration of the toast
+                          $('#email').removeClass('valid');
+                          $('#email').addClass('invalid');
+                          $('#password').removeClass('valid');
+                          $('#password').addClass('invalid');
+                    }if(data == 'connect'){
+                        window.location.replace('".$hostName."admin/accueil');
+                    }
+                }
+           }); 
+       });
+       
+</script>";

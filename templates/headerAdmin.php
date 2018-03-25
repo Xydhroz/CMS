@@ -38,10 +38,6 @@
                     <div class="row">
                         <div class="col s12">
                             <a href="<?=$hostName?>" class="brand-logo">Rigel</a>
-                            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                <li><a href="<?=$hostName?>accueil/">Accueil</a></li>
-                                <li><a href="<?=$hostName?>accueil/test">Page Test</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
