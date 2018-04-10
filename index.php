@@ -3,14 +3,13 @@
     error_reporting(0);
 
 
-
     if($_SERVER['SERVER_NAME'] == 'localhost'){
-        $host       = $_SERVER['DOCUMENT_ROOT'].'/CMS/';
-        $hostName   = 'http://'.$_SERVER['SERVER_NAME'].'/CMS/';
-    }else{
-        $host       = $_SERVER['DOCUMENT_ROOT'].'/';
-        $hostName   = 'http://'.$_SERVER['SERVER_NAME'].'/';
-    }
+    $host       = $_SERVER['DOCUMENT_ROOT'].'/CMS/';
+    $hostName   = 'http://'.$_SERVER['SERVER_NAME'].'/CMS/';
+}else{
+    $host       = $_SERVER['DOCUMENT_ROOT'].'/';
+    $hostName   = 'http://'.$_SERVER['SERVER_NAME'].'/';
+}
 
     //redirecttion admin
     if($_GET['view'] == 'admin'){

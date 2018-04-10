@@ -36,10 +36,17 @@
             <div class="nav-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col s12">
+                        <div class="col s10">
                             <a href="<?=$hostName?>" class="brand-logo">Rigel</a>
                         </div>
-                    </div>
+                        <div class="col s2">
+                            <?php
+                            if(isset($_SESSION['user'])){
+                                echo '<a href="'.$hostName.'controller/admin/logout.php"><i class="fa fa-sign-out-alt fa-lg"></i> Déconnexion</a>';
+                            }
+                            ?>
+                        </div>
+                        </div>
                 </div>
             </div>
         </nav>
